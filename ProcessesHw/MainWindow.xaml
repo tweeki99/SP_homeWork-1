@@ -1,0 +1,22 @@
+﻿<Window x:Class="ProcessesHw.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProcessesHw"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="131*"/>
+            <ColumnDefinition Width="133*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="387*"/>
+            <RowDefinition Height="49"/>
+        </Grid.RowDefinitions>
+        <DataGrid Grid.Row="0" Name="itemsDataGrid" Margin="10" IsReadOnly="True" ColumnWidth="*" MinColumnWidth="70" SelectionMode="Single" Grid.ColumnSpan="2"/>
+        <Button Content="Завершить"  Grid.Row="1" Click="CombleteButtonClick" Grid.Column="0" Margin="5"/>
+        <Button Content="Обновить"  Grid.Row="1" Click="UpdateButtonClick" Grid.Column="1" Margin="5"/>
+    </Grid>
+</Window>
